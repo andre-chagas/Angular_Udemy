@@ -23,4 +23,12 @@ export class ListaComprasComponent {
 
     this.item = '';
   }
+
+  riscarItem(itemLista: ItemLista) {
+    itemLista.comprado =  !itemLista.comprado;
+  }
+
+  limparLista() {
+    this.lista = [];
+  }
 }
