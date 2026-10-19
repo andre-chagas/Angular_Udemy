@@ -26,7 +26,7 @@ import { Cliente } from '../cadastro/cliente';
   templateUrl: './consulta.component.html',
   styleUrl: './consulta.component.scss'
 })
-export class ConsultaComponent {
+export class ConsultaComponent implements OnInit {
 
   listaClientes: Cliente[] = [];
 
