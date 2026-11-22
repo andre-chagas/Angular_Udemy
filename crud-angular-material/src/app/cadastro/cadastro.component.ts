@@ -9,10 +9,12 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSelectModule } from '@angular/material/select';
 import { Cliente } from './cliente';
 import { ClienteService } from '../cliente.service';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 import { Estado, Municipio } from '../brasilapi.models';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -25,6 +27,8 @@ import { Estado, Municipio } from '../brasilapi.models';
     MatInputModule,
     MatIconModule,
     MatButtonModule,
+    MatSelectModule,
+    CommonModule,
     NgxMaskDirective,
   ], providers: [
     provideNgxMask()
